@@ -1,0 +1,52 @@
+/* Container that holds .topper and .bottom side by side */
+#mainBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-image: https://cdn.dribbble.com/userupload/23450468/file/original-341c97c3d5d468aebcbc92fad5242f4b.gif;
+}
+
+/* Animation for uncovering the game area */
+@keyframes shrinkUp {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 20%;
+    }
+}
+
+.topper {
+    margin: 20px;
+    padding: 30px;
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 45%; /* Adjust width to fit side by side */
+}
+
+.topper.shrink {
+    animation: shrinkUp 0.5s forwards;
+}
+
+.bottom {
+    margin: 20px;
+    padding: 30px;
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 45%; /* Adjust width to fit side by side */
+}
+
+.bottom.reveal {
+    opacity: 1;
+}
+.headings {
+    font-family: "Big Shoulders Stencil", sans-serif;
+}
