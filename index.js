@@ -43,6 +43,7 @@ function startGame(evt) {
     const bottom = document.querySelector('.bottom');
     topper.classList.add('shrink');
     bottom.classList.add('reveal');
+
 }
 
 function handlePlayerChoice(evt, playerChoice) {
@@ -77,6 +78,17 @@ function playGame(playerChoice) {
     playerDisplay.textContent = `${playerName}: ${playerChoice}`;
     computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
     resultDisplay.textContent = result;
+
+    resultDisplay.classList.remove("greenText", "redText")
+
+    switch(result){
+        case "YOU WIN THIS ROUND!":
+            resultDisplay.classList.add("greenText");
+            break;
+        case "YOU LOSE THIS ROUND!":
+            resultDisplay.classList.add("redText");
+            break;
+    }
 
     checkForWinner();
 }
