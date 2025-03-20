@@ -4,14 +4,15 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 :root {
-    --main-bg-color: #D9DBF1; /* Light Purple */
-    --accent-color: #A5A8DC; /* Muted Lavender */
-    --button-color: #BFA2DB; /* Soft Violet */
-    --button-hover-color: #D5C5E3; /* Light Violet */
-    --highlight-color: #7D7BB8; /* Deep Lavender */
-    --text-color: #494D7E; /* Dark Violet */
+    --main-bg-color: #F0D9F4; /* Light Pink */
+    --accent-color: #D9BFE5; /* Muted Lavender Pink */
+    --button-color: #E8A2D0; /* Soft Pink-Violet */
+    --button-hover-color: #F3C5E0; /* Light Pink Violet */
+    --highlight-color: #B87DB8; /* Deep Pink-Lavender */
+    --text-color: #7E496F; /* Dark Pink-Violet */
     --win-color: #5DBA66; /* Green for Win Text */
     --lose-color: #E05252; /* Red for Lose Text */
+
 }
 
 #mainBox {
